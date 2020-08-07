@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Bootstrap 3 Table (Sort)</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/css/dataTables.bootstrap.min.css'>
+  <link rel="stylesheet" href="css/covid-19.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,500" rel="stylesheet"/>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+<div class="row">
+<div class="container"> 
+  
+  
+  <table class="table responsive" id="sort">
+	<thead>
+		<tr>
+			<th colspan="6"><h1 style="text-align: center;">Covid-19 World Cases</h1></th>
+		  </tr>
+		<tr>
+			<th scope="col">Location</th>
+			<th scope="col">Confirmed</th>
+			<th scope="col">Recoverd</th>
+			<th scope="col">Death</th>
+			
+		</tr>
+	</thead>
+	<tbody>
+    <tr>
+			<td>United States</td>
+			<td>890K</td>
+			<td>82,843</td>
+			<td>50,372</td>
+		</tr><tr>
+			<td data-table-header="Title">Spain</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Italy</td>
+			<td data-table-header="Authors">190K</td>
+			<td data-table-header="Journal">57,776</td>
+			<td data-table-header="Date">25,549</td>
+		</tr><tr>
+			<td data-table-header="Title">Germany</td>
+			<td data-table-header="Authors">153K</td>
+			<td data-table-header="Journal">95,817</td>
+			<td data-table-header="Date">5,575</td>
+		</tr><tr>
+			<td data-table-header="Title">United Kingdom</td>
+			<td data-table-header="Authors">138K</td>
+			<td data-table-header="Journal">-</td>
+			<td data-table-header="Date">18,738</td>
+		</tr><tr>
+			<td data-table-header="Title">France</td>
+			<td data-table-header="Authors">121K</td>
+			<td data-table-header="Journal">42,088</td>
+			<td data-table-header="Date">21,856</td>
+		</tr><tr>
+			<td data-table-header="Title">Turkey</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Iran</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">China</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Russia</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Brazil</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Belgium</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Canada</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Netherlands</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Switzerland</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">India
+      </td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Portugal</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Peru</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Ireland</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Sweden</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Austria</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Israel</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Saudi Arabia</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Japan</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Singapore</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Chile</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Mexico</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Ecuador</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Pakistan</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Poland</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">
+        South Korea</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Romania</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">United Arab Emirates</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Belarus</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Denmark</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Indonesia</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Qatar</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Ukraine</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Norway</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Serbia</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Philippines</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Czechia</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Australia</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Malaysia</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Dominican Republic</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Panama</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Colombia</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Finland</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Bangladesh</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">South Africa</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Egypt</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Luxembourg</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Morocco</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Argentina</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Algeria</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Moldova</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Thailand</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Greece</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Kuwait</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Kazakhstan</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Hungary</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Bahrain</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Croatia</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Iceland</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Uzbekistan</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Oman</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Iraq</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Armenia</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Estonia</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Azerbaijan</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Bosnia and Herzegovina</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Lithuania</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Slovenia</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Slovakia</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Spain</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Slovakia</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Afghanistan</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">North Macedonia</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Cuba</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Bulgaria</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">New Zealand</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Hong Kong</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Côte d'Ivoire</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Djibouti</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Nigeria</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Tunisia</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Guinea</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Cyprus</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Latvia</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Andorra</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Lebanon</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Costa Rica</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Bolivia</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Niger</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Kosovo</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Albania</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Kyrgyzstan</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Burkina Faso</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Honduras</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Uruguay</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">San Marino</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Senegal</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Malta</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Jordan</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Georgia</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Taiwan</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Democratic Republic of the Congo</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Guatemala</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Sri Lanka</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Palestine</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">
+        Mauritius</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Somalia</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Mayotte</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Kenya</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Montenegro</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Venezuela</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Mali</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Isle of Man</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Tanzania</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Jersey</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Vietnam</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">El Salvador</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Jamaica</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Guernsey</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Paraguay</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Faroe Islands</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Republic of the Congo</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Gabon</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Martinique</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Sudan</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Rwanda</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Guadeloupe</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Myanmar (Burma)</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Brunei</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Gibraltar</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Cambodia</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Madagascar</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Ethiopia</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Trinidad and Tobago</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Maldives</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Northern Cyprus</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Liberia</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Aruba</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Bermuda</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">
+        French Guiana</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Monaco</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Togo</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">
+        Equatorial Guinea</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Cape Verde</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Liechtenstein</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Barbados</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Zambia</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Uganda</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Sint Maarten</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Haiti</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">The Bahamas</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Guyana</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Cayman Islands</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Sierra Leone</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Libya</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">French Polynesia</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Benin</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Guinea-Bissau</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Nepal</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Mozambique</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Macao</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Syria</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Eritrea</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Saint Martin</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Eswatini</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Mongolia</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Chad</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Malawi</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Zimbabwe</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Angola</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Antigua and Barbuda</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Timor-Leste</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Botswana</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Laos</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Belize</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Fiji</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">New Caledonia</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Central African Republic</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Central African Republic</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Namibia</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Grenada</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Saint Kitts and Nevis</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Saint Lucia</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Curaçao</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Saint Vincent and the Grenadines</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">
+        Falkland Islands (Islas Malvinas)</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Burundi</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Greenland</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Montserrat</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Nicaragua</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Seychelles</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Åland Islands</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Suriname</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">The Gambia</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+    </tr>
+    <tr>
+			<td data-table-header="Title">Papua New Guinea</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+    </tr>
+    <tr>
+			<td data-table-header="Title">Bhutan</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Mauritania</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">São Tomé and Príncipe</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">22,157</td>
+		</tr><tr>
+			<td data-table-header="Title">Saint Barthélemy</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">-</td>
+		</tr><tr>
+			<td data-table-header="Title">Caribbean Netherlands</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">-</td>
+		</tr><tr>
+			<td data-table-header="Title">South Sudan</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">0</td>
+		</tr><tr>
+			<td data-table-header="Title">British Virgin Islands</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">1</td>
+		</tr><tr>
+			<td data-table-header="Title">Anguilla</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">0</td>
+		</tr><tr>
+			<td data-table-header="Title">Saint Pierre and Miquelon</td>
+			<td data-table-header="Authors">213K</td>
+			<td data-table-header="Journal">89,250</td>
+			<td data-table-header="Date">-</td>
+		</tr><tr>
+			<td data-table-header="Title">Yemen</td>
+			<td data-table-header="Authors">1</td>
+			<td data-table-header="Journal">1</td>
+			<td data-table-header="Date">0</td>
+		</tr><tr>
+			<td data-table-header="Title">Réunion</td>
+			<td data-table-header="Authors">-</td>
+			<td data-table-header="Journal">-</td>
+			<td data-table-header="Date">-</td>
+    </tr>
+    
+		
+		
+	</tbody>
+</table>
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/js/jquery.dataTables.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/js/dataTables.bootstrap.min.js"></script>
+<script src "https://cdn.datatables.net/plug-ins/1.10.15/sorting/stringMonthYear.js"></script>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.0/moment.min.js'></script>
+  <script  src="js/covid-19.js"></script>
+
+</body>
+</html>
